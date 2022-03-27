@@ -1,5 +1,3 @@
-
-
 export const Routing = {
     base: '/',
     login: '/login',
