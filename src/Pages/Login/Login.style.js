@@ -1,8 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export const Alert = styled.text`
-color:red;
-
-
-
+export const ErrorAlert = styled.text`
+  color: red;
 `

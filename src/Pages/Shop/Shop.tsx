@@ -1,3 +1,5 @@
+import {Content} from "../Global.style";
+
 export const Shop = (): JSX.Element => {
-    return <>Shop</>
+    return <Content>Shop</Content>
 }

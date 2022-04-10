@@ -8,14 +8,15 @@ import {Login} from './Pages/Login/Login';
 import {Main} from "./Pages/Main/Main";
 import {Contact} from "./Pages/Contact/Contact";
 import {Shop} from "./Pages/Shop/Shop";
+import {PageTemplate} from "./Components/PageTemplate/PageTemplate";
 
 ReactDOM.render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<Login/>}/>
-            <Route path={Routing.main} element={<Main/>}/>
-            <Route path={Routing.contact} element={<Contact/>}/>
-            <Route path={Routing.shop} element={<Shop/>}/>
+            <Route path={Routing.main} element={<PageTemplate Element={<Main/>}/>}/>
+            <Route path={Routing.contact} element={<PageTemplate Element={<Contact/>}/>}/>
+            <Route path={Routing.shop} element={<PageTemplate Element={<Shop/>}/>}/>
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')

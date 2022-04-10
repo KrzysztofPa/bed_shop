@@ -1,3 +1,5 @@
+import {Content} from "../Global.style";
+
 export const Contact = (): JSX.Element => {
-    return <>Contact</>
+    return <Content>Contact</Content>
 }

@@ -1,16 +1,25 @@
-import {useState} from "react";
+import {FormEvent, useState} from "react";
+import {useNavigate} from "react-router-dom";
+import {ErrorAlert} from "./Login.style";
+import {Routing} from "../../services/Routing";
 
 export const Login = (): JSX.Element => {
 
     const [errorString, setErrorString] = useState('')
 
+    const navigator = useNavigate();
 
-    const checkPassword = (e: React.FormEvent<HTMLInputElement>) => {
-
+    const checkPassword = (e: FormEvent<HTMLInputElement>) => {
         if (e.currentTarget.value.length <= 6) {
             setErrorString('Password should have at least 6 lenght')
         } else {
             setErrorString('')
+        }
+    }
+
+    const login = () => {
+        if (errorString === '') {
+            navigator(Routing.main)
         }
     }
 
@@ -26,8 +35,8 @@ export const Login = (): JSX.Element => {
                     checkPassword(e)
                 }}/>
             </label>
-            <div>{errorString}</div>
-            <input type="submit" value="Send"/>
+            <ErrorAlert>{errorString}</ErrorAlert>
+            <input type="submit" value="Send" onClick={() => login()}/>
         </form>
     </>
 }
