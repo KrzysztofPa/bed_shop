@@ -6,8 +6,8 @@ export const MenuContent = styled.div`
   height: 3rem;
   display: flex;
   justify-content: space-between;
-  background-color: #f1f1f6;
-  border-bottom: 3px solid #9e9ea2;
+  background-color: #f5f4f1;
+  border-bottom: 1px solid #e4e2e1;
   position: absolute;
   opacity: 0.8;
   top: 0;
@@ -18,4 +18,11 @@ export const NavButton = styled.button`
   height: 100%;
   margin: 0 15px;
   font-size: 1.2rem;
+  background-color: inherit;
+  color: #55545a;
+
+  &:hover {
+    background-color: #e4e2e1;
+    cursor: pointer;
+  }
 `

@@ -1,6 +1,7 @@
-import {Baner, ContactButton, MainContent, ShopButton} from "./Main.style";
+import {Baner, MainContent} from "./Main.style";
 import {useNavigate} from "react-router-dom";
 import {Routing} from "../../services/Routing";
+import {DefaultButton} from "../Global.style";
 
 export const Main = (): JSX.Element => {
 
@@ -11,8 +12,8 @@ export const Main = (): JSX.Element => {
             <Baner>
                 <h3>Bed shop</h3>
                 <p>Twój sklep z łózkami</p>
-                <ShopButton onClick={() => navigator(Routing.shop)}>Przeglądaj ofertę</ShopButton>
-                <ContactButton onClick={() => navigator(Routing.contact)}>Skontaktuj się z nami</ContactButton>
+                <DefaultButton onClick={() => navigator(Routing.shop)}>Przeglądaj ofertę</DefaultButton>
+                <DefaultButton onClick={() => navigator(Routing.contact)}>Skontaktuj się z nami</DefaultButton>
             </Baner>
         </MainContent>
 
