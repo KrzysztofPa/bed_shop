@@ -1,42 +1,41 @@
-import {FormEvent, useState} from "react";
+import {ChangeEvent, useState} from "react";
 import {useNavigate} from "react-router-dom";
-import {ErrorAlert} from "./Login.style";
+import {ErrorAlert, Form, Input, LoginContent} from "./Login.style";
 import {Routing} from "../../services/Routing";
+import {Baner, DefaultButton} from "../Global.style";
 
 export const Login = (): JSX.Element => {
 
     const [errorString, setErrorString] = useState('')
 
+    const [password, setPassword] = useState('')
+
     const navigator = useNavigate();
 
-    const checkPassword = (e: FormEvent<HTMLInputElement>) => {
-        if (e.currentTarget.value.length <= 6) {
-            setErrorString('Password should have at least 6 lenght')
-        } else {
-            setErrorString('')
-        }
-    }
 
     const login = () => {
-        if (errorString === '') {
+        if (password.length <= 6) {
+            setErrorString('Hasło powinno mieć minimum 6 znaków')
+        } else {
             navigator(Routing.main)
         }
     }
 
 
-    return <>
-        Login
-        <form>
-            <label>Email:
-                <input type='email'/>
-            </label>
-            <label>Password:
-                <input type='password' onChange={(e) => {
-                    checkPassword(e)
+    return <LoginContent>
+        <Baner>
+
+            <h1>Logowanie</h1>
+            <Form>
+                <label>Email:</label>
+                <Input type='email' id='email'/>
+                <label>Password:</label>
+                <Input type='password' onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                    setPassword(e.currentTarget.value)
                 }}/>
-            </label>
-            <ErrorAlert>{errorString}</ErrorAlert>
-            <input type="submit" value="Send" onClick={() => login()}/>
-        </form>
-    </>
+                <ErrorAlert>{errorString}</ErrorAlert>
+                <DefaultButton onClick={() => login()}>Zaloguj się</DefaultButton>
+            </Form>
+        </Baner>
+    </LoginContent>
 }

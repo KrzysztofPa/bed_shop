@@ -1,7 +1,7 @@
-import {Baner, MainContent} from "./Main.style";
+import {MainContent} from "./Main.style";
 import {useNavigate} from "react-router-dom";
 import {Routing} from "../../services/Routing";
-import {DefaultButton} from "../Global.style";
+import {Baner, DefaultButton} from "../Global.style";
 
 export const Main = (): JSX.Element => {
 

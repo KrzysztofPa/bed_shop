@@ -1,7 +1,7 @@
-import {Content} from "../Global.style";
+import {Baner, Content} from "../Global.style";
 import {ContactForm, ContactInput, ContactTextArea, SendMassage} from "./Contact.style";
 import {useState} from "react";
-import {Baner} from "../Main/Main.style";
+
 
 export const Contact = (): JSX.Element => {
 
