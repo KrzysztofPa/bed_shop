@@ -1,7 +1,7 @@
-import {ShopContent} from "./Shop.style";
+import {ProductImage, ProductItem, ProductList, ProductName, ProductPrice, ShopContent} from "./Shop.style";
 
 
-interface productList {
+interface productItem {
     name: string,
     id: string,
     price: number
@@ -11,7 +11,7 @@ interface productList {
 
 export const Shop = (): JSX.Element => {
 
-    const product_list: productList[] = [
+    const product_list: productItem[] = [
         {
             name: "Łóżko metalowe",
             id: "qwe1",
@@ -41,5 +41,17 @@ export const Shop = (): JSX.Element => {
     ]
 
 
-    return <ShopContent>Shop</ShopContent>
+    return <ShopContent>
+        <ProductList>
+            {product_list.map((productItem) => (
+                <ProductItem>
+                    <ProductImage url={'./No-image-available.png'}/>
+                    <ProductName> {productItem.name}</ProductName>
+                    <ProductPrice>{productItem.price} PLN</ProductPrice>
+                </ProductItem>
+            ))}
+
+        </ProductList>
+
+    </ShopContent>
 }

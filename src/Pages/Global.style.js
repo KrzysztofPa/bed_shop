@@ -24,8 +24,8 @@ export const DefaultButton = styled.button`
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
-
 `
+
 export const Baner = styled.div`
   opacity: 0.8;
   text-align: center;

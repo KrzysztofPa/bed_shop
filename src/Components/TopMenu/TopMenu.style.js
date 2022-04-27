@@ -29,4 +29,8 @@ export const NavButton = styled.button`
 
 export const Image = styled.img`
   cursor: pointer;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `
