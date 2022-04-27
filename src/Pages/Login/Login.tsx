@@ -13,7 +13,8 @@ export const Login = (): JSX.Element => {
     const navigator = useNavigate();
 
 
-    const login = () => {
+    const login = (e: any) => {
+        e.preventDefault();
         if (password.length <= 6) {
             setErrorString('Hasło powinno mieć minimum 6 znaków')
         } else {
@@ -34,7 +35,7 @@ export const Login = (): JSX.Element => {
                     setPassword(e.currentTarget.value)
                 }}/>
                 <ErrorAlert>{errorString}</ErrorAlert>
-                <DefaultButton onClick={() => login()}>Zaloguj się</DefaultButton>
+                <DefaultButton onClick={(e: any) => login(e)}>Zaloguj się</DefaultButton>
             </Form>
         </Baner>
     </LoginContent>

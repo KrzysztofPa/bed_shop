@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { Content } from '../Global.style'
 
 export const ContactForm = styled.form`
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,4 +20,11 @@ export const ContactInput = styled.input`
 
 export const ContactTextArea = styled.textarea`
   min-width: 14rem;
+`
+
+export const ContactContent = styled(Content)`
+  background: url("/contact_background.jpg") bottom;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
 `

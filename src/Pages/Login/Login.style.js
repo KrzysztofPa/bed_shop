@@ -6,7 +6,7 @@ export const ErrorAlert = styled.text`
 `
 
 export const LoginContent = styled(Content)`
-  background: url("https://swiat-sypialni.pl/environment/cache/images/0_0_productGfx_23261/P1070449.jpg");
+  background: url("/login_background.jpg");
   background-size: cover;
   margin: 0;
   min-height: 100vh;

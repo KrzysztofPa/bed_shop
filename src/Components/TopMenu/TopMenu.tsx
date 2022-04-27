@@ -1,6 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import {Routing} from "../../services/Routing";
-import {MenuContent, NavButton} from "./TopMenu.style";
+import {Image, MenuContent, NavButton} from "./TopMenu.style";
 
 export const TopMenu = (): JSX.Element => {
 
@@ -8,7 +8,7 @@ export const TopMenu = (): JSX.Element => {
 
     return <>
         <MenuContent>
-            <img alt='logo'/>
+            <Image src='/logo.jpg' alt='logo' onClick={() => navigator(Routing.main)}/>
             <div>
                 <NavButton onClick={() => navigator(Routing.main)}> Strona główna</NavButton>
                 <NavButton onClick={() => navigator(Routing.shop)}> Sklep</NavButton>

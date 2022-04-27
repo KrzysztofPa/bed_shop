@@ -26,3 +26,7 @@ export const NavButton = styled.button`
     cursor: pointer;
   }
 `
+
+export const Image = styled.img`
+  cursor: pointer;
+`

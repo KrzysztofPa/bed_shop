@@ -1,5 +1,5 @@
-import {Baner, Content} from "../Global.style";
-import {ContactForm, ContactInput, ContactTextArea, SendMassage} from "./Contact.style";
+import {Baner, DefaultButton} from "../Global.style";
+import {ContactContent, ContactForm, ContactInput, ContactTextArea, SendMassage} from "./Contact.style";
 import {useState} from "react";
 
 
@@ -12,8 +12,9 @@ export const Contact = (): JSX.Element => {
         setSendMassage('Wiadomośc została wysłana')
     }
 
-    return <Content>
+    return <ContactContent>
         <Baner>
+            <h2>Skontaktuj się z nami</h2>
             <ContactForm>
                 <label htmlFor='email'>
                     Mail:
@@ -24,7 +25,7 @@ export const Contact = (): JSX.Element => {
                 </label>
                 <ContactTextArea id='massage'/>
 
-                <button onClick={(e) => setMassage(e as unknown as MouseEvent)}>Wyślij</button>
+                <DefaultButton onClick={(e: any) => setMassage(e as unknown as MouseEvent)}>Wyślij</DefaultButton>
 
                 <SendMassage>
                     {sendMassage}
@@ -32,5 +33,5 @@ export const Contact = (): JSX.Element => {
             </ContactForm>
         </Baner>
 
-    </Content>
+    </ContactContent>
 }
