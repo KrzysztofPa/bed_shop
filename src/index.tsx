@@ -9,6 +9,7 @@ import {Main} from "./Pages/Main/Main";
 import {Contact} from "./Pages/Contact/Contact";
 import {Shop} from "./Pages/Shop/Shop";
 import {PageTemplate} from "./Components/PageTemplate/PageTemplate";
+import {Product} from './Pages/Product/Product';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -17,6 +18,7 @@ ReactDOM.render(
             <Route path={Routing.main} element={<PageTemplate Element={<Main/>}/>}/>
             <Route path={Routing.contact} element={<PageTemplate Element={<Contact/>}/>}/>
             <Route path={Routing.shop} element={<PageTemplate Element={<Shop/>}/>}/>
+            <Route path={Routing.product} element={<PageTemplate Element={<Product/>}/>}/>
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
