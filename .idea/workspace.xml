@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6c3252-0549-4cab-a4a8-70e5093cbaa0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Product/Product.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Product/Product.style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55fcd4e2d8099171920f082599e4053b46b2bd08" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Product/Product.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Shop/Shop.style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Shop/Shop.style.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Shop/Shop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Shop/Shop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Routing.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,8 @@
       <workItem from="1651042302805" duration="2660000" />
       <workItem from="1651045501286" duration="16000" />
       <workItem from="1651055400947" duration="1616000" />
-      <workItem from="1651137028592" duration="1141000" />
+      <workItem from="1651137028592" duration="1204000" />
+      <workItem from="1651146279165" duration="1895000" />
     </task>
     <servers />
   </component>

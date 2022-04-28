@@ -1,4 +1,4 @@
-import {ProductImage, ProductItem, ProductList, ProductName, ProductPrice, ShopContent} from "./Shop.style";
+import {ListProductImage, ListProductItem, ListProductName, ListProductPrice, ProductList, ShopContent} from "./Shop.style";
 import {generatePath, useNavigate} from "react-router-dom";
 import {Routing} from "../../services/Routing";
 
@@ -45,11 +45,11 @@ export const Shop = (): JSX.Element => {
     return <ShopContent>
         <ProductList>
             {product_list.map((productItem) => (
-                <ProductItem onClick={() => navigator(generatePath(Routing.product, {product: productItem.id}))}>
-                    <ProductImage url={'./No-image-available.png'}/>
-                    <ProductName> {productItem.name}</ProductName>
-                    <ProductPrice>{productItem.price} PLN</ProductPrice>
-                </ProductItem>
+                <ListProductItem onClick={() => navigator(generatePath(Routing.product, {product: productItem.id}))}>
+                    <ListProductImage url={'./No-image-available.png'}/>
+                    <ListProductName> {productItem.name}</ListProductName>
+                    <ListProductPrice>{productItem.price} PLN</ListProductPrice>
+                </ListProductItem>
             ))}
 
         </ProductList>

@@ -11,5 +11,3 @@ N
 src/Pages/Login/Login.style.js,f/f/ff3a4c7c88e050699aa78a2e44827f2122895b37
 ;
 src/App.css,a/a/aa7165aefcf8ee3d73539e99ab007daf1aa18d8d
-L
-src/Pages/Main/Main.style.js,5/5/55fcd4e2d8099171920f082599e4053b46b2bd08

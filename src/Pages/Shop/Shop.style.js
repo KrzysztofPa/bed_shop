@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { Content } from '../Global.style'
 
 export const ShopContent = styled(Content)`
@@ -24,7 +25,7 @@ export const ProductList = styled.div`
   }
 `
 
-export const ProductItem = styled.div`
+export const ListProductItem = styled.div`
   background-color: #f5f4f1;
   padding: 1rem;
   border-radius: 1rem;
@@ -39,18 +40,18 @@ export const ProductItem = styled.div`
   }
 `
 
-export const ProductImage = styled.img`
+export const ListProductImage = styled.img`
   width: 14rem;
   height: 14rem;
   border-radius: 1rem;
   border: 1px solid #e4e2e1;
 `
 
-export const ProductName = styled.p`
+export const ListProductName = styled.p`
 
 `
 
-export const ProductPrice = styled.p`
+export const ListProductPrice = styled.p`
   font-weight: bold;
 
 `
