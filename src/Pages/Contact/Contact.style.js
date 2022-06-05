@@ -28,3 +28,16 @@ export const ContactContent = styled(Content)`
   margin: 0;
   min-height: 100vh;
 `
+
+export const FBLogo = styled.a`
+width: 2rem;
+height:2rem;
+margin:auto;
+
+`
+
+export const FBIMG = styled.img`
+    width: 2rem;
+height:2rem;
+    
+    `

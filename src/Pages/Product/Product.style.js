@@ -56,3 +56,13 @@ export const BuyButton = styled(DefaultButton)`
   font-size: 1.3rem;
   margin: 0 5rem;
 `
+
+
+export const DeleteButton = styled(DefaultButton)`
+  background-color: red;
+  color: white;
+  width: calc(100% - 5rem);
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  margin: 0.2rem 5rem;
+`

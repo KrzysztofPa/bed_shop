@@ -1,5 +1,5 @@
 import {Baner, DefaultButton} from "../Global.style";
-import {ContactContent, ContactForm, ContactInput, ContactTextArea, SendMassage} from "./Contact.style";
+import {ContactContent, ContactForm, ContactInput, ContactTextArea, FBIMG, FBLogo, SendMassage} from "./Contact.style";
 import {useState} from "react";
 
 
@@ -31,6 +31,9 @@ export const Contact = (): JSX.Element => {
                     {sendMassage}
                 </SendMassage>
             </ContactForm>
+            <FBLogo href='https://www.facebook.com/'>
+                <FBIMG src='https://www.facebook.com/images/fb_icon_325x325.png'></FBIMG>
+            </FBLogo>
         </Baner>
 
     </ContactContent>

@@ -15,8 +15,8 @@ export const Login = (): JSX.Element => {
 
     const login = (e: any) => {
         e.preventDefault();
-        if (password.length <= 6) {
-            setErrorString('Hasło powinno mieć minimum 6 znaków')
+        if (password !== 'admin') {
+            setErrorString('Logowanie nieudane')
         } else {
             navigator(Routing.main)
         }

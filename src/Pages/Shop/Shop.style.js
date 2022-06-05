@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Content } from '../Global.style'
+import {Content, DefaultButton} from '../Global.style'
 
 export const ShopContent = styled(Content)`
   background-color: #ffffff;
@@ -13,7 +13,7 @@ export const ProductList = styled.div`
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
 
@@ -53,5 +53,16 @@ export const ListProductName = styled.p`
 
 export const ListProductPrice = styled.p`
   font-weight: bold;
-
+`
+export const AddProduct = styled(DefaultButton)`
+  background-color: #2d6be6;
+  color: white;
+  width: 50%;
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  transform: translate(-50%, 0);
+  z-index: 5;
 `

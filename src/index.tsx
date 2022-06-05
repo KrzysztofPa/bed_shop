@@ -10,6 +10,7 @@ import {Contact} from "./Pages/Contact/Contact";
 import {Shop} from "./Pages/Shop/Shop";
 import {PageTemplate} from "./Components/PageTemplate/PageTemplate";
 import {Product} from './Pages/Product/Product';
+import {Add} from "./Pages/Add/Add";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
             <Route path={Routing.contact} element={<PageTemplate Element={<Contact/>}/>}/>
             <Route path={Routing.shop} element={<PageTemplate Element={<Shop/>}/>}/>
             <Route path={Routing.product} element={<PageTemplate Element={<Product/>}/>}/>
+            <Route path={Routing.add} element={<PageTemplate Element={<Add/>}/>}/>
         </Routes>
     </BrowserRouter>,
     document.getElementById('root')
@@ -28,3 +30,6 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+export const baseUrl = 'http://localhost:3005'
